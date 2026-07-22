@@ -96,7 +96,7 @@
               <span class="f-hint" id="descCount">0 / 2000</span>
             </div>
 
-            <div id="submitMsg" class="f-msg" style="margin-bottom: 0.5rem; font-size: 12px; font-weight: 700; min-height: 14px;"></div>
+            <div id="submitMsg" class="f-msg" style="margin-bottom: 0.2rem; font-size: 6px; font-weight: 700; min-height: 7px;"></div>
 
             <div class="form-actions">
               <button type="button" id="submitBtn" class="btn-primary" onclick="submitIdea()">
@@ -109,50 +109,7 @@
         <!-- ══ STATUS PANEL ══ -->
         <div id="panelStatus" class="hidden">
 
-          <!-- Summary strip -->
-          <div class="summary-strip" id="summaryStrip" style="display:none;">
-            <div class="sum-cell">
-              <div class="sum-num" id="sumTotal">–</div>
-              <div class="sum-lbl">Total</div>
-            </div>
-            <div class="sum-cell">
-              <div class="sum-num c-open" id="sumOpen">–</div>
-              <div class="sum-lbl">Open</div>
-            </div>
-            <div class="sum-cell">
-              <div class="sum-num c-prog" id="sumProg">–</div>
-              <div class="sum-lbl">In Review</div>
-            </div>
-            <div class="sum-cell">
-              <div class="sum-num c-res" id="sumRes">–</div>
-              <div class="sum-lbl">Resolved</div>
-            </div>
-          </div>
-
-          <!-- Filters -->
-          <div class="controls" id="controls" style="display:none;">
-            <div class="search-row-filter">
-              <span class="search-icon-sm">🔍</span>
-              <input id="searchInp" type="text" placeholder="Search by idea stage or status…" oninput="onSearch()" aria-label="Search pitches" />
-            </div>
-            <div class="filter-sort">
-              <select id="filterSel" class="fs-sel" onchange="onFilter()" aria-label="Filter by status">
-                <option value="">All Statuses</option>
-                <option value="pending">Pending</option>
-                <option value="open">Open</option>
-                <option value="in_review">In Review</option>
-                <option value="in_progress">In Progress</option>
-                <option value="solved">Responded</option>
-                <option value="resolved">Resolved</option>
-                <option value="closed">Closed</option>
-                <option value="rejected">Not Proceeding</option>
-              </select>
-              <select id="sortSel" class="fs-sel" onchange="onSort()" aria-label="Sort pitches">
-                <option value="desc">Newest First</option>
-                <option value="asc">Oldest First</option>
-              </select>
-            </div>
-          </div>
+       
 
           <div id="statusContent"></div>
 
@@ -172,7 +129,7 @@
           <img src="https://academeforge.in/IMG/getInTouch.png" alt="Share your product idea with AcademeForge" />
           <div class="visual-caption">
             <span class="visual-tag">🌟 Open to Collaborations</span>
-            <p>We've helped ideas become real products used by thousands of students. Yours could be next.</p>
+            <p>We've helped ideas become real products used by students. Yours could be next.</p>
           </div>
         </div>
       </section>
