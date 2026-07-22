@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<script>(()=>{var v=localStorage.getItem("af_dark_mode");var isDark;if(v==="1")isDark=true;else if(v==="0")isDark=false;else isDark=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",isDark?"dark":"light")})()</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f8fafc" />
+  <meta name="description" content="Have a product idea? Share it with AcademeForge and let's build something meaningful together." />
+  <meta name="keywords" content="AcademeForge, Product Idea, Collaboration, EdTech, Build Together, Innovation, Student Startup" />
+  <meta name="author" content="AcademeForge" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://academeforge.in/contact/collab/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AcademeForge" />
+  <meta property="og:title" content="Share Your Product Idea | AcademeForge" />
+  <meta property="og:description" content="Have a product idea? Share it with AcademeForge and let's build something meaningful together." />
+  <meta property="og:url" content="https://academeforge.in/contact/collab/" />
+  <meta property="og:image" content="https://academeforge.in/IMG/og-image.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <title>Share Your Idea | AcademeForge</title>
+  <link rel="icon" type="image/png" href="https://academeforge.in/IMG/logo.png">
+  <link rel="shortcut icon" href="https://academeforge.in/IMG/logo.png">
+  <link rel="apple-touch-icon" href="https://academeforge.in/IMG/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://academeforge.in/assets/css/style.min.css?v=6.0" />
+  <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+
+  <!-- Header injected by include.js -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="layout-grid">
+
+      <!-- Left Panel: Info & Form -->
+      <section class="left-panel">
+        <div class="intro">
+          <div class="intro-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            Collab with AcademeForge
+          </div>
+          <h1 class="i18n-text">Got a Product Idea?</h1>
+          <p class="i18n-text">Have something in mind that could shape the future of learning? Share your vision with us — we actively collaborate with creators, thinkers, and builders to bring meaningful products to life.</p>
+
+          <div class="reason-list">
+            <div class="reason-item">
+              <span class="reason-icon">🚀</span>
+              <div>
+                <strong>Co-build with a real team</strong>
+                <span>Work alongside AcademeForge's developers and designers to bring your idea to production.</span>
+              </div>
+            </div>
+            <div class="reason-item">
+              <span class="reason-icon">🎯</span>
+              <div>
+                <strong>Your idea, our ecosystem</strong>
+                <span>Integrate your product into the AcademeForge platform and reach students across India.</span>
+              </div>
+            </div>
+            <div class="reason-item">
+              <span class="reason-icon">🤝</span>
+              <div>
+                <strong>Fair collaboration terms</strong>
+                <span>We believe in transparent, founder-friendly partnerships — no hidden strings attached.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tab-bar">
+          <button class="tab-btn active" id="tabSubmit" onclick="switchTab('submit')">💡 Pitch Your Idea</button>
+          <button class="tab-btn" id="tabStatus" onclick="switchTab('status')">📋 My Pitches</button>
+        </div>
+
+        <!-- ══ SUBMIT PANEL ══ -->
+        <div id="panelSubmit">
+          <form id="ideaForm" class="form-card" onsubmit="return false;">
+            <div id="ideaFormStatus" class="alert" style="display:none;"></div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="fName" name="fName" class="form-control" placeholder="Your Full Name" maxlength="100" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="fPhone" name="fPhone" class="form-control" placeholder="Mobile (optional)" maxlength="18" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="fEmail" name="fEmail" class="form-control" placeholder="Email Address" maxlength="120" required autocomplete="email" />
+              <span class="f-hint">We'll use this to follow up with you about your idea.</span>
+            </div>
+
+            <div class="form-group">
+              <select id="fReason" name="fReason" class="form-control f-select">
+                <option value="">What stage is your idea at?</option>
+                <option value="just_an_idea">Just an Idea (concept stage)</option>
+                <option value="has_prototype">Have a Prototype / MVP</option>
+                <option value="needs_tech">Need Technical Help to Build</option>
+                <option value="needs_design">Need Design Help</option>
+                <option value="wants_collab">Looking for a Co-founder / Partner</option>
+                <option value="existing_product">Have an Existing Product to Integrate</option>
+                <option value="open_source">Open Source / Community Project</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <textarea id="fDesc" name="fDesc" class="form-control" placeholder="Describe your product idea — what problem does it solve, who is it for, and how does it work? The more detail you share, the better we can evaluate the fit. (min. 10 characters)" required rows="5" maxlength="2000"></textarea>
+              <span class="f-hint" id="descCount">0 / 2000</span>
+            </div>
+
+            <div id="submitMsg" class="f-msg" style="margin-bottom: 0.5rem; font-size: 12px; font-weight: 700; min-height: 14px;"></div>
+
+            <div class="form-actions">
+              <button type="button" id="submitBtn" class="btn-primary" onclick="submitIdea()">
+                Send My Idea →
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ══ STATUS PANEL ══ -->
+        <div id="panelStatus" class="hidden">
+
+          <!-- Summary strip -->
+          <div class="summary-strip" id="summaryStrip" style="display:none;">
+            <div class="sum-cell">
+              <div class="sum-num" id="sumTotal">–</div>
+              <div class="sum-lbl">Total</div>
+            </div>
+            <div class="sum-cell">
+              <div class="sum-num c-open" id="sumOpen">–</div>
+              <div class="sum-lbl">Open</div>
+            </div>
+            <div class="sum-cell">
+              <div class="sum-num c-prog" id="sumProg">–</div>
+              <div class="sum-lbl">In Review</div>
+            </div>
+            <div class="sum-cell">
+              <div class="sum-num c-res" id="sumRes">–</div>
+              <div class="sum-lbl">Resolved</div>
+            </div>
+          </div>
+
+          <!-- Filters -->
+          <div class="controls" id="controls" style="display:none;">
+            <div class="search-row-filter">
+              <span class="search-icon-sm">🔍</span>
+              <input id="searchInp" type="text" placeholder="Search by idea stage or status…" oninput="onSearch()" aria-label="Search pitches" />
+            </div>
+            <div class="filter-sort">
+              <select id="filterSel" class="fs-sel" onchange="onFilter()" aria-label="Filter by status">
+                <option value="">All Statuses</option>
+                <option value="pending">Pending</option>
+                <option value="open">Open</option>
+                <option value="in_review">In Review</option>
+                <option value="in_progress">In Progress</option>
+                <option value="solved">Responded</option>
+                <option value="resolved">Resolved</option>
+                <option value="closed">Closed</option>
+                <option value="rejected">Not Proceeding</option>
+              </select>
+              <select id="sortSel" class="fs-sel" onchange="onSort()" aria-label="Sort pitches">
+                <option value="desc">Newest First</option>
+                <option value="asc">Oldest First</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="statusContent"></div>
+
+          <div class="pag-row hidden" id="pagRow">
+            <button class="pag-btn" id="pagPrev" onclick="goPage(-1)" disabled>← Prev</button>
+            <span class="pag-info" id="pagInfo"></span>
+            <button class="pag-btn" id="pagNext" onclick="goPage(1)">Next →</button>
+          </div>
+
+        </div><!-- /panelStatus -->
+
+      </section>
+
+      <!-- Right Panel: Visual -->
+      <section class="right-panel">
+        <div class="right-visual">
+          <img src="https://academeforge.in/IMG/getInTouch.png" alt="Share your product idea with AcademeForge" />
+          <div class="visual-caption">
+            <span class="visual-tag">🌟 Open to Collaborations</span>
+            <p>We've helped ideas become real products used by thousands of students. Yours could be next.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer injected by include.js -->
+  <div id="site-footer"></div>
+
+  <!-- Toast container -->
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <script src="script.js?v=1.0"></script>
+  <script src="https://academeforge.in/assets/js/include.js?v=3.0" defer></script>
+</body>
+</html>
